@@ -6,7 +6,7 @@ This repository contains slides and code samples for sessions presented at Visua
 ## Sessions  
 
 **M01 - Hands-On Lab: Asynchronous and Parallel Programming in C#**  
-Level: Intermediate
+*Level: Intermediate*  
 
 Asynchronous programming is a critical skill to take full advantage of today's multi-core systems. But async programming brings its own set of issues. In this workshop, we'll work through some of those issues and get comfortable using parts of the .NET Task Parallel Library (TPL).  
 
@@ -57,7 +57,7 @@ Resources:
 ---  
 
 **T15 - Get Func-y: Delegates in C#**  
-Level: Introducotry / Intermediate  
+*Level: Introductory / Intermediate*  
 
 Delegates are the gateway to functional programming. So lets understand delegates and how we can change the way we program by using functions as parameters, variables, and properties. In addition, we'll see how the built in delegate types, Func and Action, are waiting to make our lives easier. We'll see how delegates can add elegance, extensibility, and safety to our programming.  
 
@@ -73,7 +73,7 @@ Resources:
 ---
 
 **W22 - I'll Get Back to You: Task, Await, and Asynchronous Methods in C#**  
-Level: Introducotry / Intermediate  
+*Level: Introductory / Intermediate*  
 
 There's a lot of confusion about async/await, Task/TPL, and asynchronous and parallel programming in general. So let's start with the basics and look at how we can call asynchronous methods using Task and then see how the "await" operator can makes things easier for us. Along the way, we'll look at continuations, ConfigureAwait, and exception handling.
 

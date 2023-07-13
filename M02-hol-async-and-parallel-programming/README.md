@@ -1,4 +1,4 @@
-HOL01 - Asynchronous and Parallel Programming in C#
+M02 - Hands-On Lab: Asynchronous and Parallel Programming in C#
 ============================
 
 **To download just the labs, you can visit this repository:  
