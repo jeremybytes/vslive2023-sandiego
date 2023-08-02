@@ -3,12 +3,17 @@ using System.Windows.Media;
 
 namespace ProgressReport.UI;
 
+/// <summary>
+/// For more information on the Value Converters, please
+/// see the "Data Templates and Value Converters" demo available
+/// at http://www.jeremybytes.com/Demos.aspx
+/// </summary>
 public class DecadeConverter : IValueConverter
 {
     public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
     {
         int year = ((DateTime)value).Year;
-        return string.Format("{0}0s", year.ToString().Substring(0, 3));
+        return string.Format($"{year.ToString()[..3]}0s");
     }
 
     public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -22,7 +27,7 @@ public class RatingConverter : IValueConverter
     public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
     {
         int rating = (int)value;
-        return string.Format("{0}/10 Stars", rating.ToString());
+        return string.Format($"{rating}/10 Stars");
     }
 
     public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
@@ -43,14 +48,6 @@ public class RatingStarConverter : IValueConverter
     public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
     {
         string input = (string)value;
-        //int rating = 0;
-
-        //foreach (var ch in input)
-        //    if (ch == '*')
-        //        rating++;
-
-        //return rating;
-
         return input.Count(c => c == '*');
     }
 }
@@ -61,19 +58,15 @@ public class DecadeBrushConverter : IValueConverter
     {
         int decade = (((DateTime)value).Year / 10) * 10;
 
-        switch (decade)
+        return decade switch
         {
-            case 1970:
-                return new SolidColorBrush(Colors.Maroon);
-            case 1980:
-                return new SolidColorBrush(Colors.DarkGreen);
-            case 1990:
-                return new SolidColorBrush(Colors.DarkSlateBlue);
-            case 2000:
-                return new SolidColorBrush(Colors.CadetBlue);
-            default:
-                return new SolidColorBrush(Colors.DarkSlateGray);
-        }
+            1970 => new SolidColorBrush(Colors.Maroon),
+            1980 => new SolidColorBrush(Colors.DarkGreen),
+            1990 => new SolidColorBrush(Colors.DarkSlateBlue),
+            2000 => new SolidColorBrush(Colors.CadetBlue),
+            2010 => new SolidColorBrush(Colors.DarkMagenta),
+            _ => new SolidColorBrush(Colors.DarkSlateGray),
+        };
     }
 
     public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)

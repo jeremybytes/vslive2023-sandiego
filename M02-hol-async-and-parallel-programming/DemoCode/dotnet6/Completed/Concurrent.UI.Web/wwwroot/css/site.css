@@ -62,6 +62,10 @@ div[data="0"] {
     background-color: cadetblue;
 }
 
+div[data="1"] {
+    background-color: darkmagenta;
+}
+
 /* END - Jeremy's section */
 
 a.navbar-brand {
