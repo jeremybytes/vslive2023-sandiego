@@ -281,7 +281,7 @@ To fix this, we can "await" the "GenerateMaze" call.
 
 *Note: "GetTextMaze" is used for console applications to generate a text-based maze. Although it is not used in the web application, we should update this method while we are here.*  
 
-10. Update the method signatures of "IMazeAlgorithm".  
+10. Update the method signatures of "IMazeGenerator".  
 
 Since we changed the return types for "GetGraphicalMaze" and "GetTextMaze", we need to update those methods in the interface as well.  
 
@@ -412,7 +412,7 @@ At this point, the solution builds successfully. When we run the application, we
 BONUS CHALLENGE: Additional Methods
 -----------------------------------  
 
-Now that we have added async to our application, we can look for other place where we can update to asynchronous methods. One example is in the MazeController class.
+Now that we have added async to our application, we can look for other places where we can update to asynchronous methods. One example is in the MazeController class.
 
 1. Open the "MazeWeb/Controllers/MazeController.cs" file.  
 
