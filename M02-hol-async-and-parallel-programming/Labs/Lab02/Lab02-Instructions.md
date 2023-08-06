@@ -13,7 +13,7 @@ The "Starter" folder contains the code files for this lab.
 **Visual Studio 2022:** Open the "Mazes.sln" solution.  
 **Visual Studio Code:** Open the "Starter" folder in VS Code.  
 
-This is a console application that produces mazes. There are a number of algorithms that generate mazes with different speeds and biases (a bias could be a tendency to include diagonal paths, longer/shorter paths, or twistier/straighter paths). 
+This is a web application that produces mazes. There are a number of algorithms that generate mazes with different speeds and biases (a bias could be a tendency to include diagonal paths, longer/shorter paths, or twistier/straighter paths). 
 
 The "MazeWeb" project contains a web application that creates and shows the mazes.
 
