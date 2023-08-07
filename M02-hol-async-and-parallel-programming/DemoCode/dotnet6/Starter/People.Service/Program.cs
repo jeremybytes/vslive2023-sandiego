@@ -5,8 +5,6 @@ builder.WebHost.ConfigureKestrel(options => options.ListenLocalhost(9874));
 // Add services to the container.
 builder.Services.AddSingleton<IPeopleProvider, HardCodedPeopleProvider>();
 
-builder.Services.ConfigureHttpJsonOptions(options => options.SerializerOptions.WriteIndented = true);
-
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
