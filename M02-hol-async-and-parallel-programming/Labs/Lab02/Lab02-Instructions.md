@@ -86,7 +86,7 @@ There are two "slow" areas of this application:
 
 Because we do not want to block the incoming request threads in our web application, we will make both of these methods asynchronous.
 
-The "MazeGenerator" class creates the grid and uses the maze algorithm to create the maze. The "Generate" method is one that we want to make asynchronous.
+The "MazeGenerator" class creates the grid and uses the maze algorithm to create the maze. The "GenerateMaze" method is one that we want to make asynchronous.
 
 The "Grid" class creates the output image. The "ToPng" method is one that we want to make asynchronous.
 
