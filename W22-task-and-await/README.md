@@ -44,7 +44,7 @@ Provides a list of "Person" objects. This service will delay for 3 seconds befor
 * [Task Continuations: Checking IsFaulted, IsCompleted, and Task.Status](http://jeremybytes.blogspot.com/2015/01/task-continuations-checking-isfaulted.html)  
 * [Task.IsCompletedSuccessfully - YAY! (and hmmm)](https://jeremybytes.blogspot.com/2019/04/taskiscompletedsuccessfully-yay-and-hmmm.html)  
 * [Task and Await: Basic Cancellation](http://jeremybytes.blogspot.com/2015/01/task-and-await-basic-cancellation.html)  
-* ["await Task.WhenAll" Shows One Exception - Here's How to See Them All](https://jeremybytes.blogspot.com/2020/09/await-taskwhenall-shows-one-exception.html)
+* AggregateException: ["await Task.WhenAll" Shows One Exception - Here's How to See Them All](https://jeremybytes.blogspot.com/2020/09/await-taskwhenall-shows-one-exception.html)
 * [Brownfield Async: Converting IAsyncResult to Task](http://jeremybytes.blogspot.com/2016/03/brownfield-async-converting.html)  
 * Book Review: [Parallel Programming with Microsoft .NET](http://jeremybytes.blogspot.com/2014/02/book-review-parallel-programming-with.html)  
 * Book Review: [Async in C# 5.0](http://jeremybytes.blogspot.com/2013/01/book-review-async-in-c-50.html)  
